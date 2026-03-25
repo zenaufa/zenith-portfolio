@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Your Role & Title</title>
+    <meta name="description"
+        content="Portfolio of Your Name - Your Role and Title. Showcase your experience, certifications, and activities.">
+    <meta name="keywords" content="portfolio, resume, professional, template">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Your Name | Your Role & Title">
+    <meta property="og:description"
+        content="Portfolio of Your Name - showcasing experience, certifications, and professional activities.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Your Name Portfolio">
+    <meta property="profile:first_name" content="Your">
+    <meta property="profile:last_name" content="Name">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourwebsite.com/">
+    <meta name="twitter:title" content="Your Name | Your Role & Title">
+    <meta name="twitter:description"
+        content="Portfolio showcasing experience, certifications, and professional activities.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="Your City">
+    <meta name="geo.position" content="0;0">
+    <meta name="ICBM" content="0, 0">
+
+    <!-- Schema.org JSON-LD - Person -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://yourwebsite.com/#person",
+            "name": "Your Name",
+            "givenName": "Your",
+            "familyName": "Name",
+            "jobTitle": ["Your Role", "Your Title"],
+            "url": "https://yourwebsite.com/",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+            "sameAs": [],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Your City",
+                "addressCountry": "US"
+            },
+            "description": "A professional portfolio showcasing experience, certifications, and activities."
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD - WebPage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "@id": "https://yourwebsite.com/#webpage",
+            "url": "https://yourwebsite.com/",
+            "name": "Your Name | Your Role & Title",
+            "description": "Professional portfolio template.",
+            "mainEntity": {"@id": "https://yourwebsite.com/#person"},
+            "inLanguage": "en",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://yourwebsite.com/#website",
+                "url": "https://yourwebsite.com/",
+                "name": "Your Name Portfolio"
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD - BreadcrumbList -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yourwebsite.com/"
+                }
+            ]
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        as="style">
+    <link rel="preload" href="https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2"
+        as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    </noscript>
+
+    <!-- Preload LCP image for faster render -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=829&h=1024&fit=crop"
+        as="image" fetchpriority="high">
+
+    <style>
+        /* ============================
+           CSS VARIABLES & BASE STYLES
+           ============================ */
+        :root {
+            --orb1-color: #a855f7;
+            --orb2-color: #ec4899;
+            --orb3-color: #06b6d4;
+            --text-primary: #f0f0f0;
+            --text-secondary: #aaaaaa;
+            --bg-primary: #0a0a0a;
+            --accent-purple: #4c2295;
+            --accent-purple-light: #793bb3;
+        }
+
+        /* ============================
+           FONTS
+           ============================ */
+        @font-face {
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* ============================
+           BASE RESET
+           ============================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Overpass', sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .section {
+            padding: 15px 0 0px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ============================
+           HERO SECTION
+           ============================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 4% 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 4rem;
+            width: 100%;
+        }
+
+        .hero-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            animation: slideLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin-bottom: 1rem;
+            animation: slideTop 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+            animation-delay: 0.15s;
+            animation-fill-mode: backwards;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            /* Removed animation to prevent blocking LCP render */
+        }
+
+        .hero-image .et_pb_image_wrap {
+            display: block;
+            line-height: 0;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+            transform-origin: bottom center;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+        }
+
+        /* ============================
+           SCROLL ARROW
+           ============================ */
+        .scroll-arrow {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            transition: transform 0.3s ease, animation-play-state 0.3s ease;
+        }
+
+        .scroll-arrow:hover {
+            transform: translateX(-50%) scale(1.2);
+            animation-play-state: paused;
+        }
+
+        .scroll-arrow img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* ============================
+           EXPERIENCE ITEMS
+           ============================ */
+        .experience-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            gap: 4rem;
+        }
+
+        .section .experience-item:last-child {
+            margin-bottom: 5px;
+        }
+
+        .experience-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .experience-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 50%;
+        }
+
+        .experience-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 45%;
+            perspective: 1000px;
+        }
+
+        .experience-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+            transform-style: preserve-3d;
+        }
+
+        /* ============================
+           SECTION HEADERS
+           ============================ */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 1;
+            transform: none;
+            transition: none;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-purple-light), var(--accent-purple));
+            border-radius: 2px;
+        }
+
+        .section-header h2:hover {
+            background: linear-gradient(90deg, var(--accent-purple-light), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ============================
+           ANIMATED TEXT
+           ============================ */
+        .animated-text {
+            min-height: 2em;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            opacity: 0;
+            animation: initialFadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* CLS fix: Reserve space for experience items before JS loads */
+        .experience-item {
+            min-height: 200px;
+            contain: layout style;
+        }
+
+        /* CLS fix: Minimum height for carousel to prevent major layout shift */
+        .carousel-container {
+            min-height: 200px;
+        }
+
+        /* Let images determine their natural aspect ratio */
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .animated-text.changing {
+            animation: textChange 1.5s ease-in-out;
+        }
+
+        /* ============================
+           PARTICLES BACKGROUND
+           ============================ */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 3;
+        }
+
+        /* ============================
+           TEXT STYLES
+           ============================ */
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* ============================
+           FLOATING ORBS
+           ============================ */
+        .floating-orbs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.3;
+            animation: float 20s infinite ease-in-out;
+            transition: background 1.5s ease;
+        }
+
+        .orb1 {
+            width: 300px;
+            height: 300px;
+            background: var(--orb1-color);
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .orb2 {
+            width: 400px;
+            height: 400px;
+            background: var(--orb2-color);
+            top: 50%;
+            right: 10%;
+            animation-delay: 5s;
+        }
+
+        .orb3 {
+            width: 250px;
+            height: 250px;
+            background: var(--orb3-color);
+            bottom: 10%;
+            left: 30%;
+            animation-delay: 10s;
+        }
+
+        /* ============================
+           VIGNETTE & SCROLL PROGRESS
+           ============================ */
+        .vignette-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(124, 58, 237, 0.1) 100%);
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-purple-light), var(--accent-purple));
+            z-index: 10000;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.1s ease-out;
+        }
+
+        nav {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(10, 10, 10, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ============================
+           CAROUSEL
+           ============================ */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+            /* CLS fix: Prevent layout shift while images load */
+            background-color: #1a1a1a;
+        }
+
+        .carousel-container:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            flex: 0 0 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-slide .et_pb_image_wrap,
+        .carousel-slide picture {
+            display: block;
+            width: 100%;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        /* Multi-slide carousels: images fill container */
+        .carousel-container.multi-slide .carousel-track {
+            height: 100%;
+        }
+
+        .carousel-container.multi-slide .carousel-slide {
+            height: 100%;
+        }
+
+        .carousel-container.multi-slide .carousel-slide .et_pb_image_wrap,
+        .carousel-container.multi-slide .carousel-slide picture {
+            height: 100%;
+        }
+
+        .carousel-container.multi-slide .carousel-slide img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-prev {
+            left: 10px;
+        }
+
+        .carousel-next {
+            right: 10px;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+
+        /* ============================
+           BUTTONS
+           ============================ */
+        button,
+        .btn {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        button:hover,
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        /* ============================
+           KEYFRAME ANIMATIONS
+           ============================ */
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0) translateX(-50%);
+            }
+
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        @keyframes initialFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textChange {
+            0% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            80% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideTop {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -50px) rotate(120deg);
+            }
+
+            66% {
+                transform: translate(-20px, 30px) rotate(240deg);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 10px rgba(124, 58, 237, 0);
+            }
+        }
+
+        /* ============================
+           CONNECT BUTTON
+           ============================ */
+        .connect-btn {
+            display: inline-flex;
+            align-items: center;
+            align-self: flex-start;
+            gap: 10px;
+            margin-top: 1.5rem;
+            padding: 14px 32px;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 0px 20px rgba(124, 124, 237, 0.5);
+            border: none;
+            cursor: pointer;
+        }
+
+        .connect-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 35px rgba(124, 58, 237, 0.5);
+        }
+
+        .connect-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        /* ============================
+           HERO TESTIMONIAL CAROUSEL
+           ============================ */
+        .hero-testimonial-carousel {
+            margin-top: 1.5rem;
+            position: relative;
+            width: 100%;
+            max-width: 520px;
+            overflow: hidden;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .testimonial-card {
+            min-width: 100%;
+            flex: 0 0 100%;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .testimonial-quote {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-style: italic;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .testimonial-quote::before {
+            content: '\201C';
+            font-size: 2rem;
+            color: var(--accent-purple-light);
+            font-family: Georgia, serif;
+            line-height: 1;
+            margin-right: 4px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-purple-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .testimonial-info h4 {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            margin: 0 0 2px 0;
+            font-weight: 600;
+        }
+
+        .testimonial-info p {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .testimonial-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-link:hover {
+            opacity: 0.9;
+        }
+
+        .testimonial-linkedin-badge-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-linkedin-badge-link:hover {
+            opacity: 0.8;
+        }
+
+        .testimonial-link:hover .testimonial-linkedin-badge {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .testimonial-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 0 24px 16px;
+        }
+
+        .testimonial-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .testimonial-dot.active {
+            background: var(--accent-purple-light);
+            transform: scale(1.4);
+        }
+
+        .testimonial-linkedin-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0 24px 16px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .testimonial-linkedin-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: #0A66C2;
+        }
+
+        /* ============================
+           RESPONSIVE DESIGN
+           ============================ */
+        @media (max-width: 1280px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            .hero-text {
+                align-items: center;
+            }
+
+            .hero-image {
+                max-width: 50%;
+            }
+
+            .connect-btn {
+                align-self: center;
+            }
+
+            .hero-testimonial-carousel {
+                max-width: 520px;
+            }
+
+            .testimonial-card {
+                text-align: left;
+            }
+
+            .testimonial-author {
+                text-align: left;
+            }
+
+            .testimonial-info h4,
+            .testimonial-info p {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100vh;
+                min-height: 100dvh;
+                padding: 2% 0 40px;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.6rem;
+            }
+
+            .hero-image {
+                max-height: 35vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-image img,
+            .hero-image .et_pb_image_wrap {
+                max-height: 35vh;
+                width: auto;
+                object-fit: contain;
+            }
+
+            .hero-text {
+                width: 100%;
+                min-width: 0;
+                overflow: hidden;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+                margin-bottom: 0.3rem;
+            }
+
+            .animated-text {
+                font-size: 1rem;
+                margin: 0.3rem 0;
+                min-height: 1.5em;
+            }
+
+            .connect-btn {
+                margin: 0.6rem auto 0.8rem;
+                padding: 10px 24px;
+                font-size: 0.85rem;
+            }
+
+            .hero-testimonial-carousel {
+                margin-top: 0.6rem;
+                max-width: 100%;
+                width: 100%;
+                border-radius: 12px;
+            }
+
+            .testimonial-track {
+                width: 100%;
+            }
+
+            .testimonial-card {
+                min-width: 100%;
+                max-width: 100%;
+                padding: 14px 14px;
+            }
+
+            .testimonial-quote {
+                font-size: 0.75rem;
+                line-height: 1.5;
+                margin-bottom: 10px;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+            }
+
+            .testimonial-quote::before {
+                font-size: 1.4rem;
+            }
+
+            .testimonial-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 0.75rem;
+            }
+
+            .testimonial-info h4 {
+                font-size: 0.75rem;
+            }
+
+            .testimonial-info p {
+                font-size: 0.65rem;
+            }
+
+            .testimonial-nav {
+                padding: 0 14px 10px;
+                gap: 4px;
+            }
+
+            .testimonial-dot {
+                width: 5px;
+                height: 5px;
+            }
+
+            .testimonial-linkedin-badge {
+                padding: 0 14px 10px;
+                font-size: 0.6rem;
+            }
+
+            .testimonial-linkedin-badge svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .scroll-arrow {
+                bottom: 10px;
+            }
+
+            .scroll-arrow img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .experience-item {
+                flex-direction: column;
+                align-items: stretch;
+                margin-bottom: 6rem;
+                gap: 1rem;
+            }
+
+            .experience-text {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .experience-image {
+                margin: 0.5rem 0;
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .section {
+                padding: 15px 0 0px;
+            }
+
+            .section-header {
+                margin-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Orbs -->
+    <div class="floating-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <!-- Vignette Overlay -->
+    <div class="vignette-overlay"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="container content-wrapper">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <span class="et_pb_image_wrap"><img fetchpriority="high" decoding="async" width="829" height="1024"
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=829&h=1024&fit=crop"
+                            alt="Profile Picture" title="Profile Picture" class="wp-image-954"></span>
+                </div>
+                <div class="hero-text">
+                    <h1>Your Name</h1>
+                    <div class="animated-text" id="role-text">Your Role at Your Company</div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="connect-btn" id="connect-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        Connect with Me
+                    </a>
+                    <div class="hero-testimonial-carousel" id="hero-testimonial-carousel"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+            </div>
+            <div id="experience-list"></div>
+        </div>
+    </section>
+
+    <!-- Training and Certification Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training and Certification</h2>
+            </div>
+            <div id="training-list"></div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Activities</h2>
+            </div>
+            <div id="activities-list"></div>
+        </div>
+    </section>
+
+    <!-- ============================
+         DATA & CONTENT GENERATION
+         ============================ -->
+    <script>
+        // ===========================================
+        // CONTENT DATA - Easy to maintain!
+        // Just edit the arrays below to update content
+        // ===========================================
+
+        // ===========================================
+        // RESPONSIVE IMAGE CONFIGURATION
+        // Defines available sizes for each image path
+        // ===========================================
+
+        // RESPONSIVE_IMAGES config is empty for template mode (using external stock URLs)
+        // Add your own responsive image configs here when using local images
+        const RESPONSIVE_IMAGES = {};
+
+        // Work Experience Data
+        const experienceData = [
+            {
+                title: "Senior Project Manager",
+                company: "Tech Solutions Inc.",
+                year: "January 2022 – Present",
+                desc: "Leading cross-functional teams to deliver enterprise software solutions. Managing project timelines, budgets, and stakeholder communications to ensure successful product launches.",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1024&h=768&fit=crop", alt: "Team collaboration at office" }
+                ]
+            },
+            {
+                title: "Technical Lead",
+                company: "Digital Innovations Co.",
+                year: "March 2020 – December 2021",
+                desc: "Guided development teams in building scalable web applications. Conducted code reviews, mentored junior developers, and established best practices for the engineering organization.",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1024&h=768&fit=crop", alt: "Technical leadership meeting" }
+                ]
+            },
+            {
+                title: "Software Engineer",
+                company: "StartupHub",
+                year: "June 2018 – February 2020",
+                desc: "Developed and maintained full-stack web applications using modern frameworks. Collaborated with product managers to translate business requirements into technical solutions.",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1024&h=768&fit=crop", alt: "Software development workspace" }
+                ]
+            },
+            {
+                title: "Junior Developer",
+                company: "WebCraft Agency",
+                year: "January 2016 – May 2018",
+                desc: "Built responsive websites and web applications for various clients. Gained experience in front-end development, UI/UX design principles, and client communication.",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1024&h=768&fit=crop", alt: "Development team working" }
+                ]
+            }
+        ];
+
+        // Training & Certification Data
+        const trainingData = [
+            {
+                title: "Professional Certification Example",
+                company: "Certification Authority",
+                year: "2024",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1024&h=790&fit=crop", alt: "Professional certification" }
+                ]
+            },
+            {
+                title: "Cloud Architecture Certificate",
+                company: "Cloud Provider",
+                year: "2023",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1024&h=790&fit=crop", alt: "Cloud architecture certification" }
+                ]
+            },
+            {
+                title: "Advanced Project Management",
+                company: "Management Institute",
+                year: "2022",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1024&h=790&fit=crop", alt: "Project management certification" }
+                ]
+            }
+        ];
+
+        // Activities Data
+        const activitiesData = [
+            {
+                title: "Speaker",
+                company: "Tech Conference 2024",
+                year: "2024",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1024&h=683&fit=crop", alt: "Tech conference speaking" },
+                    { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1024&h=683&fit=crop", alt: "Conference audience" }
+                ]
+            },
+            {
+                title: "Workshop Facilitator",
+                company: "Developer Meetup",
+                year: "2023",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1024&h=683&fit=crop", alt: "Workshop facilitation" }
+                ]
+            },
+            {
+                title: "Hackathon Organizer",
+                company: "Community Tech Group",
+                year: "2022",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1024&h=683&fit=crop", alt: "Hackathon event" },
+                    { src: "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?w=1024&h=683&fit=crop", alt: "Team collaboration at hackathon" }
+                ]
+            },
+            {
+                title: "Open Source Contributor",
+                company: "Open Source Community",
+                year: "2021",
+                images: [
+                    { src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1024&h=683&fit=crop", alt: "Open source community meetup" }
+                ]
+            }
+        ];
+
+        // Testimonial Data
+        const testimonialData = [
+            {
+                name: "Alex Johnson",
+                title: "Engineering Manager, Tech Corp",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+                text: "An exceptional team leader who consistently delivers results. Their ability to communicate complex ideas simply and motivate the team through challenging projects is truly remarkable."
+            },
+            {
+                name: "Sarah Chen",
+                title: "Product Designer, Creative Studio",
+                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+                text: "Working together was a fantastic experience. They bring a unique blend of technical expertise and creative problem-solving that elevates every project they touch."
+            },
+            {
+                name: "Marcus Williams",
+                title: "CTO, Innovation Labs",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
+                text: "A reliable and skilled professional who consistently exceeds expectations. Their dedication to quality and attention to detail make them an invaluable asset to any team."
+            },
+            {
+                name: "Emily Rivera",
+                title: "Senior Developer, Cloud Systems",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+                text: "One of the most collaborative people I've ever worked with. They have a natural talent for bringing people together and creating an environment where everyone can do their best work."
+            },
+            {
+                name: "David Park",
+                title: "Scrum Master, Agile Co.",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+                text: "Their leadership style is both inspiring and effective. They empower team members to take ownership while providing the support and guidance needed to succeed."
+            }
+        ];
+
+
+        /**
+         * Renders the testimonial carousel in the hero section
+         */
+        function renderTestimonialCarousel() {
+            const container = document.getElementById('hero-testimonial-carousel');
+            if (!container || testimonialData.length === 0) return;
+
+            const cardsHTML = testimonialData.map(t => {
+                const initials = t.name.split(' ').map(n => n[0]).join('').slice(0, 2);
+                const avatarHTML = t.image
+                    ? `<div class="testimonial-avatar"><img src="${t.image}" alt="${t.name}" loading="lazy"></div>`
+                    : `<div class="testimonial-avatar">${initials}</div>`;
+                return `
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">${t.text}</div>
+                        <div class="testimonial-author">
+                            ${avatarHTML}
+                            <div class="testimonial-info">
+                                <h4>${t.name}</h4>
+                                <p>${t.title}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            const dotsHTML = testimonialData.map((_, i) =>
+                `<button class="testimonial-dot${i === 0 ? ' active' : ''}" data-index="${i}" aria-label="Go to testimonial ${i + 1}"></button>`
+            ).join('');
+
+            container.innerHTML = `
+                <div class="testimonial-track" id="testimonial-track">${cardsHTML}</div>
+                <div class="testimonial-nav">${dotsHTML}</div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="testimonial-linkedin-badge-link">
+                    <div class="testimonial-linkedin-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        View all on LinkedIn →
+                    </div>
+                </a>
+            `;
+        }
+
+        // ===========================================
+        // RENDER FUNCTIONS - Generates HTML from data
+        // ===========================================
+
+        /**
+         * Generates responsive picture element with srcset
+         * Uses WebP when available with JPEG/PNG fallback
+         */
+        function renderSlide(image, isFirst = false) {
+            const loading = isFirst ? '' : 'loading="lazy"';
+            const responsive = RESPONSIVE_IMAGES[image.src];
+
+            // If no responsive config, fall back to simple img
+            if (!responsive) {
+                return `
+                    <div class="carousel-slide">
+                        <span class="et_pb_image_wrap">
+                            <img ${loading} decoding="async" 
+                                src="${image.src}" 
+                                alt="${image.alt}" 
+                                title="${image.alt}"
+                                sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1024px, 100vw"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </span>
+                        <div class="carousel-slide-overlay"></div>
+                    </div>
+                `;
+            }
+
+            // Build WebP srcset (preferred)
+            const webpSrcset = responsive.sizes
+                .filter(s => s.webp)
+                .map(s => `${s.webp} ${s.width}w`)
+                .join(', ');
+
+            // Build fallback srcset (jpeg/png)
+            const fallbackSrcset = responsive.sizes
+                .map(s => `${s.src} ${s.width}w`)
+                .join(', ');
+
+            const sizes = "(max-width: 480px) 480px, (max-width: 980px) 980px, 1024px";
+
+            return `
+                <div class="carousel-slide">
+                    <span class="et_pb_image_wrap">
+                        <picture>
+                            ${webpSrcset ? `<source type="image/webp" srcset="${webpSrcset}" sizes="${sizes}">` : ''}
+                            <source srcset="${fallbackSrcset}" sizes="${sizes}">
+                            <img ${loading} decoding="async" 
+                                src="${responsive.fallback}" 
+                                alt="${image.alt}" 
+                                title="${image.alt}"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </picture>
+                    </span>
+                    <div class="carousel-slide-overlay"></div>
+                </div>
+            `;
+        }
+
+        /**
+         * Renders a complete experience/activity item
+         */
+        function renderItem(item) {
+            const div = document.createElement('div');
+            div.className = 'experience-item';
+
+            const slidesHTML = item.images.map((img, i) => renderSlide(img, i === 0)).join('');
+
+            div.innerHTML = `
+                <div class="experience-text">
+                    <h3>${item.title}</h3>
+                    <p>${item.company}</p>
+                    <p>${item.year}</p>
+                    ${item.desc ? `<p>${item.desc}</p>` : ''}
+                </div>
+                <div class="experience-image">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            ${slidesHTML}
+                        </div>
+                        <button class="carousel-btn carousel-prev">&#10094;</button>
+                        <button class="carousel-btn carousel-next">&#10095;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+            `;
+            return div;
+        }
+
+        /**
+         * Populates all content sections
+         */
+        function renderAllContent() {
+            const expList = document.getElementById('experience-list');
+            if (expList) {
+                experienceData.forEach(item => expList.appendChild(renderItem(item)));
+            }
+
+            const trainList = document.getElementById('training-list');
+            if (trainList) {
+                trainingData.forEach(item => trainList.appendChild(renderItem(item)));
+            }
+
+            const actList = document.getElementById('activities-list');
+            if (actList) {
+                activitiesData.forEach(item => actList.appendChild(renderItem(item)));
+            }
+
+            renderTestimonialCarousel();
+        }
+
+        // Render content immediately
+        renderAllContent();
+    </script>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" defer></script>
+
+    <!-- ============================
+         MAIN APPLICATION SCRIPT
+         ============================ -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+
+            // ===========================================
+            // CONFIGURATION
+            // ===========================================
+
+            const CONFIG = {
+                // Role animation settings
+                roles: [
+                    "Your Role at Your Company",
+                    "Another Title You Hold",
+                    "Previous Role at Past Company",
+                    "Your Expertise or Specialty"
+                ],
+                roleChangeInterval: 4000,
+
+                // Fallback colors for dynamic background
+                // Add entries mapping image filename substrings to RGB colors
+                fallbackColors: {}
+            };
+
+            // ===========================================
+            // LENIS SMOOTH SCROLLING
+            // ===========================================
+
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                smooth: true,
+                smoothTouch: false
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // ===========================================
+            // SCROLL PROGRESS BAR & VIGNETTE (Optimized to avoid reflows)
+            // ===========================================
+
+            const scrollProgress = document.querySelector('.scroll-progress');
+            const vignetteOverlay = document.querySelector('.vignette-overlay');
+
+            // Defer dimension caching to avoid forced reflow during initial render
+            let cachedScrollHeight = 0;
+            let cachedClientHeight = 0;
+            let cachedMaxScroll = 0;
+
+            function updateCachedDimensions() {
+                cachedScrollHeight = document.documentElement.scrollHeight;
+                cachedClientHeight = document.documentElement.clientHeight;
+                cachedMaxScroll = cachedScrollHeight - cachedClientHeight;
+            }
+
+            // Use requestIdleCallback if available, otherwise setTimeout
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(updateCachedDimensions);
+            } else {
+                setTimeout(updateCachedDimensions, 100);
+            }
+
+            // Update cached values on resize
+            window.addEventListener('resize', updateCachedDimensions, { passive: true });
+
+            // Combined scroll handler with cached values
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset;
+
+                // Scroll progress bar
+                if (cachedMaxScroll > 0) {
+                    const progress = scrollTop / cachedMaxScroll;
+                    scrollProgress.style.transform = `scaleX(${progress})`;
+
+                    // Vignette opacity
+                    vignetteOverlay.style.opacity = 0.3 + (progress * 0.3);
+                }
+            }, { passive: true });
+
+            // ===========================================
+            // PARTICLE SYSTEM
+            // ===========================================
+
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 50, density: { enable: true, value_area: 800 } },
+                    color: { value: "random" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.15, random: false },
+                    size: { value: 12, random: true },
+                    line_linked: { enable: false },
+                    move: { enable: true, speed: 1.5, direction: "none", random: false, straight: false, out_mode: "out" }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: false }, resize: true },
+                    modes: { repulse: { distance: 100, duration: 0.4 } }
+                },
+                retina_detect: false
+            });
+
+            // Pause particles when out of view
+            const particlesContainer = document.getElementById('particles-js');
+            if (particlesContainer && 'IntersectionObserver' in window) {
+                const particlesObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (window.pJSDom && window.pJSDom.length > 0 && window.pJSDom[0].pJS) {
+                            window.pJSDom[0].pJS.particles.move.enable = entry.isIntersecting;
+                        }
+                    });
+                });
+                particlesObserver.observe(particlesContainer);
+            }
+
+            // ===========================================
+            // SCROLL REVEAL ANIMATIONS (Using IntersectionObserver to avoid forced reflows)
+            // ===========================================
+
+            const experienceItems = document.querySelectorAll('.experience-item');
+
+            // Use IntersectionObserver instead of scroll + getBoundingClientRect
+            // This avoids forced reflows by letting the browser handle visibility checks
+            const revealObserver = new IntersectionObserver((entries) => {
+                // Process all visible entries in this batch together
+                let batchIndex = 0;
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                        // Minimal stagger (30ms) for smooth batch reveal without long delays
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, batchIndex * 30);
+                        batchIndex++;
+                        // Stop observing once revealed
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.05, // Lower threshold for earlier trigger
+                rootMargin: '50px 0px 0px 0px' // Start loading a bit before visible
+            });
+
+            experienceItems.forEach(item => revealObserver.observe(item));
+
+            // ===========================================
+            // SCROLL ARROW CLICK
+            // ===========================================
+
+            document.querySelector('.scroll-arrow').addEventListener('click', function (e) {
+                e.preventDefault();
+                const experienceSection = document.getElementById('experience');
+                lenis.scrollTo(experienceSection, { duration: 1.2 });
+            });
+
+            // ===========================================
+            // PARALLAX EFFECT
+            // ===========================================
+
+            const hero = document.querySelector('.hero');
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+            }, { passive: true });
+
+            // ===========================================
+            // DYNAMIC BACKGROUND COLORS
+            // ===========================================
+
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 10;
+            canvas.height = 10;
+
+            function getAverageColor(img) {
+                try {
+                    ctx.drawImage(img, 0, 0, 10, 10);
+                    const imageData = ctx.getImageData(0, 0, 10, 10).data;
+                    let r = 0, g = 0, b = 0, count = 0;
+
+                    for (let i = 0; i < imageData.length; i += 4) {
+                        r += imageData[i];
+                        g += imageData[i + 1];
+                        b += imageData[i + 2];
+                        count++;
+                    }
+
+                    r = Math.floor(r / count);
+                    g = Math.floor(g / count);
+                    b = Math.floor(b / count);
+
+                    return `rgb(${r}, ${g}, ${b})`;
+                } catch (e) {
+                    return null;
+                }
+            }
+
+            function rgbToHsl(r, g, b) {
+                r /= 255; g /= 255; b /= 255;
+                const max = Math.max(r, g, b), min = Math.min(r, g, b);
+                let h, s, l = (max + min) / 2;
+
+                if (max === min) {
+                    h = s = 0;
+                } else {
+                    const d = max - min;
+                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                    switch (max) {
+                        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                        case g: h = (b - r) / d + 2; break;
+                        case b: h = (r - g) / d + 4; break;
+                    }
+                    h /= 6;
+                }
+
+                return [h * 360, s * 100, l * 100];
+            }
+
+            function applyColorFromImage(img) {
+                let color = null;
+                const src = img.src || "";
+
+                // Check fallback colors first
+                for (const [key, val] of Object.entries(CONFIG.fallbackColors)) {
+                    if (src.includes(key)) {
+                        color = val;
+                        break;
+                    }
+                }
+
+                // Try to extract color from image if no fallback
+                if (!color) {
+                    try {
+                        color = getAverageColor(img);
+                    } catch (e) { }
+                }
+
+                if (color) {
+                    const [r, g, b] = color.match(/\d+/g).map(Number);
+                    let [h, s, l] = rgbToHsl(r, g, b);
+                    s = Math.max(s, 60);
+                    l = Math.max(40, Math.min(l, 70));
+
+                    const fastColor = `hsl(${h}, ${s}%, ${l}%)`;
+                    document.documentElement.style.setProperty('--orb1-color', fastColor);
+                    document.documentElement.style.setProperty('--orb2-color', `hsl(${(h + 30) % 360}, ${s}%, ${l}%)`);
+                    document.documentElement.style.setProperty('--orb3-color', `hsl(${(h + 60) % 360}, ${s}%, ${l}%)`);
+                }
+            }
+
+            // ===========================================
+            // CAROUSEL FUNCTIONALITY
+            // ===========================================
+
+            function setupCarousel(wrapper) {
+                const track = wrapper.querySelector('.carousel-track');
+                const slides = Array.from(track.children);
+                const nextBtn = wrapper.querySelector('.carousel-next');
+                const prevBtn = wrapper.querySelector('.carousel-prev');
+                const dotsContainer = wrapper.querySelector('.carousel-dots');
+                let currentIndex = 0;
+                let dots = [];
+
+                function updateSlides() {
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    dots.forEach(d => d.classList.remove('active'));
+                    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+
+                    slides.forEach(s => s.classList.remove('active-slide'));
+                    slides[currentIndex].classList.add('active-slide');
+
+                    if (isElementInViewport(wrapper)) {
+                        const activeImg = slides[currentIndex].querySelector('img');
+                        if (activeImg) applyColorFromImage(activeImg);
+                    }
+                }
+
+                function goToSlide(index) {
+                    if (index < 0) index = slides.length - 1;
+                    if (index >= slides.length) index = 0;
+                    currentIndex = index;
+                    updateSlides();
+                }
+
+                // Only show controls if multiple slides
+                if (slides.length > 1) {
+                    // Add multi-slide class for object-fit: cover
+                    wrapper.classList.add('multi-slide');
+
+                    // Calculate max height from all images
+                    const images = slides.map(s => s.querySelector('img')).filter(Boolean);
+                    let loadedCount = 0;
+                    let maxHeight = 0;
+                    let maxAspectRatio = 0;
+
+                    const updateContainerHeight = () => {
+                        const containerWidth = wrapper.offsetWidth;
+                        wrapper.style.height = (containerWidth * maxAspectRatio) + 'px';
+                    };
+
+                    const checkAllLoaded = () => {
+                        loadedCount++;
+                        if (loadedCount === images.length) {
+                            images.forEach(img => {
+                                if (img.naturalHeight > maxHeight) {
+                                    maxHeight = img.naturalHeight;
+                                }
+                            });
+                            // Set container height based on first image's rendered width and max aspect ratio
+                            const containerWidth = wrapper.offsetWidth;
+                            const firstImg = images[0];
+                            const aspectRatio = maxHeight / firstImg.naturalWidth;
+                            wrapper.style.height = (containerWidth * aspectRatio) + 'px';
+                        }
+                    };
+
+                    images.forEach(img => {
+                        if (img.complete) {
+                            checkAllLoaded();
+                        } else {
+                            img.addEventListener('load', checkAllLoaded);
+                        }
+                    });
+
+                    slides.forEach((_, index) => {
+                        const dot = document.createElement('div');
+                        dot.classList.add('dot');
+                        if (index === 0) dot.classList.add('active');
+                        dot.addEventListener('click', () => goToSlide(index));
+                        dotsContainer.appendChild(dot);
+                    });
+
+                    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+                    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+                } else {
+                    if (nextBtn) nextBtn.style.display = 'none';
+                    if (prevBtn) prevBtn.style.display = 'none';
+                    if (dotsContainer) dotsContainer.style.display = 'none';
+                }
+
+                dots = Array.from(dotsContainer.children);
+                slides[0].classList.add('active-slide');
+            }
+
+            document.querySelectorAll('.carousel-container').forEach(setupCarousel);
+
+            // ===========================================
+            // TESTIMONIAL AUTO-SLIDE
+            // ===========================================
+
+            const testimonialCarousel = document.getElementById('hero-testimonial-carousel');
+            if (testimonialCarousel) {
+                const tTrack = document.getElementById('testimonial-track');
+                const tDots = testimonialCarousel.querySelectorAll('.testimonial-dot');
+                let currentTestimonial = 0;
+                let testimonialTimer = null;
+                const totalTestimonials = tDots.length;
+                const SLIDE_INTERVAL = 5000;
+
+                function goToTestimonial(index) {
+                    if (index < 0) index = totalTestimonials - 1;
+                    if (index >= totalTestimonials) index = 0;
+                    currentTestimonial = index;
+                    tTrack.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+                    tDots.forEach(d => d.classList.remove('active'));
+                    tDots[currentTestimonial].classList.add('active');
+                }
+
+                function nextTestimonial() {
+                    goToTestimonial((currentTestimonial + 1) % totalTestimonials);
+                }
+
+                function startAutoSlide() {
+                    stopAutoSlide();
+                    testimonialTimer = setTimeout(function tick() {
+                        nextTestimonial();
+                        testimonialTimer = setTimeout(tick, SLIDE_INTERVAL);
+                    }, SLIDE_INTERVAL);
+                }
+
+                function stopAutoSlide() {
+                    clearTimeout(testimonialTimer);
+                    testimonialTimer = null;
+                }
+
+                // Pause when tab is hidden, resume when visible
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) {
+                        stopAutoSlide();
+                    } else {
+                        startAutoSlide();
+                    }
+                });
+
+                tDots.forEach(dot => {
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        stopAutoSlide();
+                        goToTestimonial(parseInt(dot.dataset.index));
+                        startAutoSlide();
+                    });
+                });
+
+                // Click left half = prev, right half = next
+                testimonialCarousel.addEventListener('click', (e) => {
+                    // Don't intercept clicks on the LinkedIn badge link or dots
+                    if (e.target.closest('.testimonial-linkedin-badge-link') || e.target.closest('.testimonial-dot')) return;
+
+                    const rect = testimonialCarousel.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    const halfWidth = rect.width / 2;
+
+                    stopAutoSlide();
+                    if (clickX < halfWidth) {
+                        goToTestimonial(currentTestimonial - 1);
+                    } else {
+                        goToTestimonial(currentTestimonial + 1);
+                    }
+                    startAutoSlide();
+                });
+
+                testimonialCarousel.addEventListener('mouseenter', stopAutoSlide);
+                testimonialCarousel.addEventListener('mouseleave', startAutoSlide);
+
+                startAutoSlide();
+            }
+
+            // ===========================================
+            // VIEWPORT VISIBILITY TRACKING (Cached to avoid forced reflows)
+            // ===========================================
+
+            // Track visibility with IntersectionObserver instead of getBoundingClientRect
+            const visibilityMap = new WeakMap();
+
+            const viewportObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    visibilityMap.set(entry.target, entry.isIntersecting);
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all carousel containers
+            document.querySelectorAll('.carousel-container').forEach(el => {
+                visibilityMap.set(el, false);
+                viewportObserver.observe(el);
+            });
+
+            // Cached check - no forced reflow!
+            function isElementInViewport(el) {
+                return visibilityMap.get(el) || false;
+            }
+
+            // ===========================================
+            // IMAGE OBSERVER
+            // ===========================================
+
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        const slide = img.closest('.carousel-slide');
+
+                        if (!slide || slide.classList.contains('active-slide')) {
+                            if (img.complete) {
+                                applyColorFromImage(img);
+                            } else {
+                                img.onload = () => applyColorFromImage(img);
+                            }
+                        }
+                    }
+                });
+            }, {
+                threshold: [0.1, 0.5],
+                rootMargin: "-10% 0px -10% 0px"
+            });
+
+            document.querySelectorAll('.experience-image img, .hero-image img').forEach(img => {
+                imageObserver.observe(img);
+                img.addEventListener('mouseenter', () => applyColorFromImage(img));
+            });
+
+            // ===========================================
+            // ROLE ANIMATION
+            // ===========================================
+
+            let currentRole = 0;
+            const roleElement = document.getElementById('role-text');
+
+            function updateRole() {
+                requestAnimationFrame(() => {
+                    roleElement.classList.add('changing');
+
+                    setTimeout(() => {
+                        currentRole = (currentRole + 1) % CONFIG.roles.length;
+                        roleElement.textContent = CONFIG.roles[currentRole];
+
+                        requestAnimationFrame(() => {
+                            roleElement.classList.remove('changing');
+                        });
+                    }, 400);
+                });
+            }
+
+            roleElement.textContent = CONFIG.roles[0];
+
+            setTimeout(() => {
+                setInterval(updateRole, CONFIG.roleChangeInterval);
+            }, 400);
+        });
+    </script>
+    <!-- Footer Credit -->
+    <footer
+        style="text-align: center; padding: 2rem 0 1.5rem; font-size: 0.85rem; color: var(--text-secondary); letter-spacing: 0.5px;">
+        Created with &lt;3 by <a href="https://zenaufa.id" target="_blank" rel="noopener noreferrer"
+            style="color: inherit; text-decoration: underline;">zenaufa</a>
+    </footer>
+</body>
+
+</html>
